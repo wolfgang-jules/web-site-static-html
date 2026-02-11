@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postek | Soluciones de pago Verifone</title>
+    <meta
+      name="description"
+      content="Landing de prueba de concepto para Postek: clientes destacados y catálogo de productos Verifone con vista de especificaciones."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__content">
+        <a class="brand" href="#">
+          <span class="brand__mark">P</span>
+          <span>
+            <strong>POSTEK</strong>
+            <small>PoC Landing</small>
+          </span>
+        </a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__grid">
+          <div>
+            <p class="tag">Soluciones de pago empresarial</p>
+            <h1>Infraestructura de pagos segura para retail, banca y servicios.</h1>
+            <p class="hero__lead">
+              Diseño inspirado en experiencias corporativas modernas. Contenido dinámico desde JSON para mostrar productos Verifone y sus especificaciones.
+            </p>
+            <div class="hero__actions">
+              <a href="#productos" class="btn btn--primary">Ver productos</a>
+              <a href="#clientes" class="btn btn--ghost">Nuestros clientes</a>
+            </div>
+          </div>
+          <aside class="hero__card">
+            <h2>Marca activa</h2>
+            <p id="brandName">Verifone</p>
+            <ul>
+              <li>Catálogo desde <code>data/verifone.json</code></li>
+              <li>Vista detallada de especificaciones por producto</li>
+              <li>Listo para nuevas marcas y nuevos clientes</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="clientes">
+        <div class="container">
+          <div class="section__header">
+            <p class="tag">Confianza regional</p>
+            <h2>Nuestros clientes</h2>
+          </div>
+          <div class="client-carousel" aria-label="Clientes destacados">
+            <div id="clientsTrack" class="client-carousel__track"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="productos">
+        <div class="container">
+          <div class="section__header">
+            <p class="tag">Catálogo inicial</p>
+            <h2>Productos Verifone</h2>
+            <p id="productsCounter" class="section__sub"></p>
+          </div>
+          <div id="productsGrid" class="products-grid" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="productDialog" class="product-dialog">
+      <article class="dialog-card">
+        <button id="closeDialog" class="dialog-close" aria-label="Cerrar detalles">×</button>
+        <img id="dialogImage" alt="Imagen de producto" />
+        <div>
+          <h3 id="dialogTitle"></h3>
+          <p id="dialogDescription"></p>
+          <div id="dialogSpecs" class="specs-grid"></div>
+        </div>
+      </article>
+    </dialog>
+
+    <template id="productTemplate">
+      <article class="product-card">
+        <img class="product-card__img" alt="" loading="lazy" />
+        <div class="product-card__content">
+          <h3 class="product-card__title"></h3>
+          <p class="product-card__description"></p>
+          <button class="btn btn--secondary">Ver detalles</button>
+        </div>
+      </article>
+    </template>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
