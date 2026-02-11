@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -29,16 +33,16 @@
 
         <nav class="topbar__nav" aria-label="Navegación principal">
           <a href="#home">Home</a>
+          <a href="#about">Quiénes somos</a>
           <a href="#products">Productos</a>
           <a href="#services">Servicios</a>
           <a href="#contact">Contacto</a>
         </nav>
 
-        <label class="theme-switch" for="themeToggle" aria-label="Cambiar entre tema claro y oscuro">
+        <label class="theme-switch" for="themeToggle" aria-label="Cambiar entre modo claro y oscuro">
           <input id="themeToggle" type="checkbox" />
-          <span class="theme-switch__track">
-            <span class="theme-switch__thumb"></span>
-          </span>
+          <span class="material-symbols-rounded theme-switch__icon theme-switch__icon--light" aria-hidden="true">light_mode</span>
+          <span class="material-symbols-rounded theme-switch__icon theme-switch__icon--dark" aria-hidden="true">dark_mode</span>
         </label>
       </div>
     </header>
@@ -49,9 +53,9 @@
         <div class="container hero__grid">
           <div>
             <p class="tag">Digital payments platform</p>
-            <h1>Aceleramos operaciones financieras con tecnología de pagos inteligente.</h1>
+            <h1>Soluciones de medios de pago, captura de datos y servicios para tu empresa.</h1>
             <p class="hero__lead">
-              Inspirado en layouts modernos de fintech corporativo: combinamos diseño premium, arquitectura escalable y una operación segura para banca, retail y servicios.
+              En Postek ayudamos a bancos, comercios, restaurantes, gasolineras y empresas de servicios a digitalizar su operación con plataformas de pago seguras, terminales de alto desempeño y soporte especializado.
             </p>
             <div class="hero__actions">
               <a href="#products" class="btn btn--primary">Explorar catálogo</a>
@@ -59,27 +63,27 @@
             </div>
             <div class="hero__metrics" aria-label="Indicadores de servicio">
               <article>
-                <strong>99.98%</strong>
-                <span>Disponibilidad operativa</span>
-              </article>
-              <article>
-                <strong>+4M</strong>
-                <span>Transacciones procesadas</span>
+                <strong>+20</strong>
+                <span>Años de experiencia regional</span>
               </article>
               <article>
                 <strong>24/7</strong>
-                <span>Monitoreo y soporte</span>
+                <span>Soporte técnico y monitoreo</span>
+              </article>
+              <article>
+                <strong>Omnicanal</strong>
+                <span>POS, móvil, ecommerce y autoservicio</span>
               </article>
             </div>
           </div>
 
           <aside class="hero__card">
             <p class="hero__card-kicker">Solución integral</p>
-            <h2>Orquestación de pagos para ecosistemas omnicanal</h2>
+            <h2>Aliado estratégico para proyectos de transformación digital</h2>
             <ul>
-              <li>Terminales Verifone de última generación</li>
-              <li>Integración con adquirentes y billeteras digitales</li>
-              <li>Gestión centralizada de dispositivos y seguridad</li>
+              <li>Equipos y software para pagos electrónicos y captura de datos</li>
+              <li>Integraciones certificadas con adquirentes, redes y procesadores</li>
+              <li>Implementación, capacitación y mantenimiento postventa</li>
             </ul>
             <a href="#contact" class="btn btn--secondary">Solicitar una demo</a>
           </aside>
@@ -98,7 +102,34 @@
         </div>
       </section>
 
-      <section class="section section--alt" id="products">
+      <section class="section section--alt" id="about">
+        <div class="container">
+          <div class="section__header">
+            <p class="tag">Quiénes somos</p>
+            <h2>Tecnología y experiencia para modernizar tu operación</h2>
+            <p class="section__sub">
+              Somos una empresa enfocada en soluciones tecnológicas para medios de pago, identificación automática y movilidad empresarial. Acompañamos a nuestros clientes desde la consultoría inicial hasta la puesta en marcha y el soporte continuo.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <h3>Nuestra visión</h3>
+              <p>Impulsar negocios más ágiles, conectados y seguros a través de plataformas de pago y herramientas digitales de clase mundial.</p>
+            </article>
+            <article class="service-card">
+              <h3>Nuestra experiencia</h3>
+              <p>Trabajamos con instituciones financieras, comercios y cadenas regionales que requieren disponibilidad, rendimiento y trazabilidad en cada transacción.</p>
+            </article>
+            <article class="service-card">
+              <h3>Nuestro compromiso</h3>
+              <p>Diseñar soluciones a la medida con atención cercana, tiempos de respuesta oportunos y acompañamiento técnico durante todo el ciclo del proyecto.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="products">
         <div class="container">
           <div class="section__header section__header--split">
             <div>
@@ -109,7 +140,7 @@
             <aside class="section__panel">
               <h3>Marca activa</h3>
               <p id="brandName">Verifone</p>
-              <small>Productos cargados dinámicamente desde <code>data/verifone.json</code>.</small>
+              <small>Terminales fijas, móviles, PIN pads, autoservicio y soluciones de pago desatendido.</small>
             </aside>
           </div>
           <div id="productsGrid" class="products-grid" aria-live="polite"></div>
@@ -120,21 +151,21 @@
         <div class="container">
           <div class="section__header">
             <p class="tag">Servicios</p>
-            <h2>Lo que hacemos para crecer tu negocio</h2>
+            <h2>Servicios especializados para cada etapa del proyecto</h2>
           </div>
 
           <div class="services-grid">
             <article class="service-card">
-              <h3>Implementación end-to-end</h3>
-              <p>Desplegamos soluciones de aceptación de pagos en sucursales, e-commerce y canales móviles con acompañamiento técnico.</p>
+              <h3>Consultoría e integración</h3>
+              <p>Analizamos tus procesos y diseñamos la arquitectura adecuada para integrar terminales, sistemas de caja, pasarelas y plataformas de gestión.</p>
             </article>
             <article class="service-card">
-              <h3>Gestión de riesgo y cumplimiento</h3>
-              <p>Aplicamos lineamientos de seguridad y cumplimiento para mantener tus transacciones alineadas con estándares regulatorios.</p>
+              <h3>Implementación y despliegue</h3>
+              <p>Realizamos instalación, configuración, certificación y capacitación para que tu equipo opere con eficiencia desde el primer día.</p>
             </article>
             <article class="service-card">
-              <h3>Optimización comercial</h3>
-              <p>Transformamos data transaccional en reportes accionables para mejorar tasas de aprobación y aumentar conversiones.</p>
+              <h3>Soporte, mantenimiento y postventa</h3>
+              <p>Brindamos atención técnica preventiva y correctiva, suministro de repuestos y acompañamiento para mantener la continuidad operativa.</p>
             </article>
           </div>
         </div>
@@ -144,28 +175,49 @@
         <div class="container contact-grid">
           <div>
             <p class="tag">Contacto</p>
-            <h2>Hablemos de tu proyecto financiero</h2>
-            <p class="section__sub">Comparte tus objetivos y diseñamos una propuesta de implementación ajustada a tus canales, volumen y necesidades de seguridad.</p>
+            <h2>Contáctanos para diseñar tu solución</h2>
+            <p class="section__sub">Cuéntanos sobre tu industria, canales y retos actuales. Nuestro equipo comercial y técnico te ayudará a construir una propuesta integral de productos y servicios.</p>
+
+            <article class="contact-info-card" aria-label="Datos de contacto">
+              <h3>Datos de oficina</h3>
+              <ul>
+                <li><strong>Dirección:</strong> 14500 SW 32 ST, Miami, FL 33175</li>
+                <li><strong>Email ventas:</strong> <a href="mailto:sales@postek-usa.com">sales@postek-usa.com</a></li>
+                <li><strong>Email soporte:</strong> <a href="mailto:service@postek-usa.com">service@postek-usa.com</a></li>
+                <li><strong>Email general:</strong> <a href="mailto:info@postek-usa.com">info@postek-usa.com</a></li>
+              </ul>
+            </article>
           </div>
-          <form class="contact-card" action="#" method="post">
-            <label>
+          <div class="contact-stack">
+            <div class="map-card" aria-label="Mapa de ubicación de oficina">
+              <iframe
+                title="Mapa oficina Postek Miami"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-80.5000%2C25.7050%2C-80.3000%2C25.8050&layer=mapnik&marker=25.7406%2C-80.4422"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <p>14500 SW 32 ST, Miami, FL 33175</p>
+            </div>
+            <form class="contact-card" action="#" method="post">
+              <label>
               Nombre
               <input type="text" name="name" placeholder="Tu nombre" required />
             </label>
-            <label>
+              <label>
               Email
               <input type="email" name="email" placeholder="tu@empresa.com" required />
             </label>
-            <label>
+              <label>
               Empresa
               <input type="text" name="company" placeholder="Nombre de tu empresa" />
             </label>
-            <label>
+              <label>
               Mensaje
               <textarea name="message" rows="4" placeholder="Cuéntanos qué tipo de solución necesitas"></textarea>
             </label>
-            <button type="submit" class="btn btn--primary">Enviar solicitud</button>
-          </form>
+              <button type="submit" class="btn btn--primary">Enviar solicitud</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
@@ -174,10 +226,16 @@
       <div class="container footer__content">
         <div>
           <strong>Postek</strong>
-          <p>Infraestructura de pagos para empresas que buscan escalar con seguridad y confiabilidad.</p>
+          <p class="footer__contact">
+            Dirección: 14500 SW 32 ST, Miami, FL 33175<br />
+            Email: <a href="mailto:info@postek-usa.com">info@postek-usa.com</a> ·
+            Ventas: <a href="mailto:sales@postek-usa.com">sales@postek-usa.com</a> ·
+            Soporte: <a href="mailto:service@postek-usa.com">service@postek-usa.com</a>
+          </p>
         </div>
         <div class="footer__links">
           <a href="#home">Home</a>
+          <a href="#about">Quiénes somos</a>
           <a href="#products">Productos</a>
           <a href="#services">Servicios</a>
           <a href="#contact">Contacto</a>
