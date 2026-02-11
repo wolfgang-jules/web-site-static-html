@@ -6,7 +6,7 @@
     <title>Postek | Soluciones de pago Verifone</title>
     <meta
       name="description"
-      content="Landing de prueba de concepto para Postek: clientes destacados y catálogo de productos Verifone con vista de especificaciones."
+      content="Home corporativo de Postek con catálogo de productos, servicios financieros y sección de contacto."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,39 +19,69 @@
   <body>
     <header class="topbar">
       <div class="container topbar__content">
-        <a class="brand" href="#">
+        <a class="brand" href="#home">
           <img class="brand__logo" src="images/logo-postek.png" alt="Logo de Postek" />
           <span>
             <strong>POSTEK</strong>
-            <small>PoC Landing</small>
+            <small>Payment Solutions</small>
           </span>
         </a>
-        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+
+        <nav class="topbar__nav" aria-label="Navegación principal">
+          <a href="#home">Home</a>
+          <a href="#products">Productos</a>
+          <a href="#services">Servicios</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+
+        <label class="theme-switch" for="themeToggle" aria-label="Cambiar entre tema claro y oscuro">
+          <input id="themeToggle" type="checkbox" />
+          <span class="theme-switch__track">
+            <span class="theme-switch__thumb"></span>
+          </span>
+        </label>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="home">
+        <div class="hero__bg" aria-hidden="true"></div>
         <div class="container hero__grid">
           <div>
-            <p class="tag">Soluciones de pago empresarial</p>
-            <h1>Infraestructura de pagos segura para retail, banca y servicios.</h1>
+            <p class="tag">Digital payments platform</p>
+            <h1>Aceleramos operaciones financieras con tecnología de pagos inteligente.</h1>
             <p class="hero__lead">
-              Diseño inspirado en experiencias corporativas modernas. Contenido dinámico desde JSON para mostrar productos Verifone y sus especificaciones.
+              Inspirado en layouts modernos de fintech corporativo: combinamos diseño premium, arquitectura escalable y una operación segura para banca, retail y servicios.
             </p>
             <div class="hero__actions">
-              <a href="#productos" class="btn btn--primary">Ver productos</a>
-              <a href="#clientes" class="btn btn--ghost">Nuestros clientes</a>
+              <a href="#products" class="btn btn--primary">Explorar catálogo</a>
+              <a href="#services" class="btn btn--ghost">Ver servicios</a>
+            </div>
+            <div class="hero__metrics" aria-label="Indicadores de servicio">
+              <article>
+                <strong>99.98%</strong>
+                <span>Disponibilidad operativa</span>
+              </article>
+              <article>
+                <strong>+4M</strong>
+                <span>Transacciones procesadas</span>
+              </article>
+              <article>
+                <strong>24/7</strong>
+                <span>Monitoreo y soporte</span>
+              </article>
             </div>
           </div>
+
           <aside class="hero__card">
-            <h2>Marca activa</h2>
-            <p id="brandName">Verifone</p>
+            <p class="hero__card-kicker">Solución integral</p>
+            <h2>Orquestación de pagos para ecosistemas omnicanal</h2>
             <ul>
-              <li>Catálogo desde <code>data/verifone.json</code></li>
-              <li>Vista detallada de especificaciones por producto</li>
-              <li>Listo para nuevas marcas y nuevos clientes</li>
+              <li>Terminales Verifone de última generación</li>
+              <li>Integración con adquirentes y billeteras digitales</li>
+              <li>Gestión centralizada de dispositivos y seguridad</li>
             </ul>
+            <a href="#contact" class="btn btn--secondary">Solicitar una demo</a>
           </aside>
         </div>
       </section>
@@ -60,7 +90,7 @@
         <div class="container">
           <div class="section__header">
             <p class="tag">Confianza regional</p>
-            <h2>Nuestros clientes</h2>
+            <h2>Clientes que operan con Postek</h2>
           </div>
           <div class="client-carousel" aria-label="Clientes destacados">
             <div id="clientsTrack" class="client-carousel__track"></div>
@@ -68,17 +98,92 @@
         </div>
       </section>
 
-      <section class="section section--alt" id="productos">
+      <section class="section section--alt" id="products">
         <div class="container">
-          <div class="section__header">
-            <p class="tag">Catálogo inicial</p>
-            <h2>Productos Verifone</h2>
-            <p id="productsCounter" class="section__sub"></p>
+          <div class="section__header section__header--split">
+            <div>
+              <p class="tag">Products</p>
+              <h2>Catálogo Verifone</h2>
+              <p id="productsCounter" class="section__sub"></p>
+            </div>
+            <aside class="section__panel">
+              <h3>Marca activa</h3>
+              <p id="brandName">Verifone</p>
+              <small>Productos cargados dinámicamente desde <code>data/verifone.json</code>.</small>
+            </aside>
           </div>
           <div id="productsGrid" class="products-grid" aria-live="polite"></div>
         </div>
       </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section__header">
+            <p class="tag">Servicios</p>
+            <h2>Lo que hacemos para crecer tu negocio</h2>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <h3>Implementación end-to-end</h3>
+              <p>Desplegamos soluciones de aceptación de pagos en sucursales, e-commerce y canales móviles con acompañamiento técnico.</p>
+            </article>
+            <article class="service-card">
+              <h3>Gestión de riesgo y cumplimiento</h3>
+              <p>Aplicamos lineamientos de seguridad y cumplimiento para mantener tus transacciones alineadas con estándares regulatorios.</p>
+            </article>
+            <article class="service-card">
+              <h3>Optimización comercial</h3>
+              <p>Transformamos data transaccional en reportes accionables para mejorar tasas de aprobación y aumentar conversiones.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--contact" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="tag">Contacto</p>
+            <h2>Hablemos de tu proyecto financiero</h2>
+            <p class="section__sub">Comparte tus objetivos y diseñamos una propuesta de implementación ajustada a tus canales, volumen y necesidades de seguridad.</p>
+          </div>
+          <form class="contact-card" action="#" method="post">
+            <label>
+              Nombre
+              <input type="text" name="name" placeholder="Tu nombre" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="tu@empresa.com" required />
+            </label>
+            <label>
+              Empresa
+              <input type="text" name="company" placeholder="Nombre de tu empresa" />
+            </label>
+            <label>
+              Mensaje
+              <textarea name="message" rows="4" placeholder="Cuéntanos qué tipo de solución necesitas"></textarea>
+            </label>
+            <button type="submit" class="btn btn--primary">Enviar solicitud</button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <div>
+          <strong>Postek</strong>
+          <p>Infraestructura de pagos para empresas que buscan escalar con seguridad y confiabilidad.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#home">Home</a>
+          <a href="#products">Productos</a>
+          <a href="#services">Servicios</a>
+          <a href="#contact">Contacto</a>
+        </div>
+      </div>
+    </footer>
 
     <dialog id="productDialog" class="product-dialog">
       <article class="dialog-card">

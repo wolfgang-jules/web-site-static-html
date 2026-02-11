@@ -118,10 +118,8 @@ productDialog.addEventListener('click', (event) => {
   if (clickedOutside) productDialog.close();
 });
 
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-  const isDark = document.body.classList.contains('dark');
-  themeToggle.textContent = isDark ? '☀️' : '🌙';
+themeToggle.addEventListener('change', () => {
+  document.body.classList.toggle('dark', themeToggle.checked);
 });
 
 initCatalog();
