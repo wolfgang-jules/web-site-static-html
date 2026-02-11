@@ -1,9 +1,10 @@
 const DATA_URL = 'data/verifone.json';
 const CLIENT_LOGOS = [
   { src: 'images/clients/bac.png', alt: 'BAC' },
-  { src: 'images/clients/banpro.png', alt: 'Banpro' },
-  { src: 'images/clients/ficohsa.jpg', alt: 'Ficohsa' },
-  { src: 'images/clients/framacias-saba.jpg', alt: 'Farmacias Saba' },
+  { src: 'images/clients/banpro.png', alt: 'BANPRO' },
+  { src: 'images/clients/ficohsa.jpg', alt: 'FICOSHA' },
+  { src: 'images/clients/lafise.svg', alt: 'LAFISE' },
+  { src: 'images/clients/framacias-saba.jpg', alt: 'FARMACIAS SABA' },
 ];
 
 const productsGrid = document.querySelector('#productsGrid');
