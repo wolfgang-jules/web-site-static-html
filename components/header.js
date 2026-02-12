@@ -13,13 +13,10 @@ class SiteHeader extends HTMLElement {
 
           <nav class="topbar__nav" aria-label="Navegación principal">
             <a href="index.html">Inicio</a>
-            <a href="about.html">Quiénes somos</a>
+            <a href="about.html">Empresa</a>
             <a href="products.html">Productos</a>
             <a href="services.html">Servicios</a>
             <a href="platform.html">Plataforma</a>
-            <a href="support.html">Soporte</a>
-            <a href="integrations.html">Integraciones</a>
-            <a href="use-cases.html">Casos de uso</a>
             <a href="contact.html">Contacto</a>
           </nav>
 
