@@ -6,12 +6,22 @@ const CLIENT_LOGOS = [
   { src: 'images/clients/lafise.png', alt: 'LAFISE' },
   { src: 'images/clients/framacias-saba.jpg', alt: 'FARMACIAS SABA' },
 ];
+const BRANDS = [
+  { id: 'verifone', name: 'Verifone', logoSrc: 'images/brands/verifone.svg' },
+  { id: 'sunmi', name: 'Sunmi', logoSrc: 'images/brands/sunmi.svg' },
+  { id: 'newpos', name: 'Newpos', logoSrc: 'images/brands/newpos.svg' },
+  { id: 'landi', name: 'Landi', logoSrc: 'images/brands/landi.svg' },
+  { id: 'dspread', name: 'Dspread', logoSrc: 'images/brands/dspread.svg' },
+  { id: 'telpo', name: 'Telpo', logoSrc: 'images/brands/telpo.svg' },
+  { id: 'urovo', name: 'Urovo', logoSrc: 'images/brands/urovo.svg' },
+];
 
 const productsGrid = document.querySelector('#productsGrid');
 const productsCounter = document.querySelector('#productsCounter');
 const productTemplate = document.querySelector('#productTemplate');
 const brandName = document.querySelector('#brandName');
 const clientsTrack = document.querySelector('#clientsTrack');
+const brandSelectorTrack = document.querySelector('#brandSelectorTrack');
 
 const productDialog = document.querySelector('#productDialog');
 const closeDialog = document.querySelector('#closeDialog');
@@ -20,6 +30,8 @@ const dialogTitle = document.querySelector('#dialogTitle');
 const dialogDescription = document.querySelector('#dialogDescription');
 const dialogSpecs = document.querySelector('#dialogSpecs');
 const themeToggle = document.querySelector('#themeToggle');
+let selectedBrand = null;
+let brandSelectorOnChange = null;
 
 function normalizeImagePath(path) {
   if (!path) return 'https://placehold.co/560x360?text=Sin+imagen';
@@ -38,6 +50,74 @@ function createClientsCarousel() {
     `
     )
     .join('');
+}
+
+function updateBrandNamePanel() {
+  if (!brandName) return;
+  const activeBrand = BRANDS.find((brand) => brand.id === selectedBrand);
+  brandName.textContent = activeBrand ? activeBrand.name : 'Todas las marcas';
+}
+
+function setSelectedBrand(nextBrandId) {
+  selectedBrand = selectedBrand === nextBrandId ? null : nextBrandId;
+
+  if (!brandSelectorTrack) return;
+  brandSelectorTrack.querySelectorAll('.brand-card').forEach((button) => {
+    const isSelected = button.dataset.brandId === selectedBrand;
+    button.setAttribute('aria-pressed', String(isSelected));
+  });
+
+  updateBrandNamePanel();
+  if (typeof brandSelectorOnChange === 'function') {
+    brandSelectorOnChange(selectedBrand);
+  }
+  if (typeof window.onBrandSelect === 'function') {
+    window.onBrandSelect(selectedBrand);
+  }
+}
+
+function renderBrandSelector() {
+  if (!brandSelectorTrack) return;
+  const fragment = document.createDocumentFragment();
+
+  BRANDS.forEach((brand) => {
+    const button = document.createElement('button');
+    const image = document.createElement('img');
+    const isSelected = brand.id === selectedBrand;
+
+    button.type = 'button';
+    button.className = 'brand-card';
+    button.dataset.brandId = brand.id;
+    button.setAttribute('aria-label', `Filtrar por ${brand.name}`);
+    button.setAttribute('aria-pressed', String(isSelected));
+    button.addEventListener('click', () => setSelectedBrand(brand.id));
+
+    image.className = 'brand-card__logo';
+    image.src = brand.logoSrc;
+    image.alt = `Logo ${brand.name}`;
+    image.loading = 'lazy';
+    image.addEventListener('error', () => {
+      button.classList.add('brand-card--fallback');
+      button.textContent = brand.name;
+    });
+
+    button.appendChild(image);
+    fragment.appendChild(button);
+  });
+
+  brandSelectorTrack.innerHTML = '';
+  brandSelectorTrack.appendChild(fragment);
+}
+
+function initBrandSelector({ value = null, onChange } = {}) {
+  if (!brandSelectorTrack) return;
+  selectedBrand = value;
+  brandSelectorOnChange = onChange;
+  renderBrandSelector();
+  updateBrandNamePanel();
+
+  if (brandSelectorTrack.dataset.ready === 'true') return;
+  brandSelectorTrack.dataset.ready = 'true';
 }
 
 function renderProducts(products) {
@@ -117,15 +197,22 @@ async function initCatalog() {
     if (clientsTrack || productsGrid) {
       console.log('initCatalog: containers present', { clientsTrack: !!clientsTrack, productsGrid: !!productsGrid });
       createClientsCarousel();
+      const onBrandSelect = (brandId) => {
+        // TODO: Usar `selectedBrand` para filtrar `products` en la siguiente iteracion.
+        console.log('Brand selected:', brandId);
+      };
+
+      initBrandSelector({
+        value: null,
+        onChange: onBrandSelect,
+      });
 
       console.log('Fetching catalog from fallback list');
       const result = await fetchFirstAvailable(JSON_FILES);
       const data = result.data;
       console.log('Catalog JSON loaded from', result.file, data && (data.pages ? data.pages.length : 'no pages'));
-      const brand = data.brand || 'verifone';
       const products = data.pages?.[0]?.products || [];
 
-      if (brandName) brandName.textContent = brand.charAt(0).toUpperCase() + brand.slice(1);
       if (productsCounter) productsCounter.textContent = `${products.length} productos cargados desde JSON.`;
 
       renderProducts(products);
