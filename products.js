@@ -4,7 +4,12 @@ const CLIENT_LOGOS = [
   { src: 'images/clients/banpro.png', alt: 'BANPRO' },
   { src: 'images/clients/ficohsa.jpg', alt: 'FICOSHA' },
   { src: 'images/clients/lafise.png', alt: 'LAFISE' },
-  { src: 'images/clients/framacias-saba.jpg', alt: 'FARMACIAS SABA' },
+  { src: 'images/clients/farmacias-saba.jpg', alt: 'FARMACIAS SABA' },
+  { src: 'images/clients/bac.png', alt: 'BAC' },
+  { src: 'images/clients/banpro.png', alt: 'BANPRO' },
+  { src: 'images/clients/ficohsa.jpg', alt: 'FICOSHA' },
+  { src: 'images/clients/lafise.png', alt: 'LAFISE' },
+  { src: 'images/clients/farmacias-saba.jpg', alt: 'FARMACIAS SABA' },
 ];
 const BRANDS = [
   { id: 'verifone', name: 'Verifone', logoSrc: 'images/brands/verifone.svg' },
