@@ -21,31 +21,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="container topbar__content">
-        <a class="brand" href="#home">
-          <img class="brand__logo" src="images/logo-postek.png" alt="Logo de Postek" />
-          <span>
-            <strong>POSTEK</strong>
-            <small>Payment Solutions</small>
-          </span>
-        </a>
-
-        <nav class="topbar__nav" aria-label="Navegación principal">
-          <a href="index.html">Home</a>
-          <a href="about.html">Quiénes somos</a>
-          <a href="products.html">Productos</a>
-          <a href="services.html">Servicios</a>
-          <a href="contact.html">Contacto</a>
-        </nav>
-
-        <label class="theme-switch" for="themeToggle" aria-label="Cambiar entre modo claro y oscuro">
-          <input id="themeToggle" type="checkbox" />
-          <span class="material-symbols-rounded theme-switch__icon theme-switch__icon--light" aria-hidden="true">light_mode</span>
-          <span class="material-symbols-rounded theme-switch__icon theme-switch__icon--dark" aria-hidden="true">dark_mode</span>
-        </label>
-      </div>
-    </header>
+    <site-header></site-header>
 
     <main>
       <section class="hero" id="home">
@@ -90,28 +66,21 @@
         </div>
       </section>
 
-      <!-- Solo sección Home -->
+      <!-- Carrusel de clientes (restaurado) -->
+      <section class="section" id="clientes">
+        <div class="container">
+          <div class="section__header">
+            <p class="tag">Confianza regional</p>
+            <h2>Clientes que operan con Postek</h2>
+          </div>
+          <div class="client-carousel" aria-label="Clientes destacados">
+            <div id="clientsTrack" class="client-carousel__track"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer__content">
-        <div>
-          <strong>Postek</strong>
-          <p class="footer__contact">
-            Dirección: 14500 SW 32 ST, Miami, FL 33175<br />
-            Email: <a href="mailto:info@postek-usa.com">info@postek-usa.com</a> ·
-            Ventas: <a href="mailto:sales@postek-usa.com">sales@postek-usa.com</a> ·
-          </p>
-        </div>
-        <div class="footer__links">
-          <a href="#home">Home</a>
-          <a href="#about">Quiénes somos</a>
-          <a href="#products">Productos</a>
-          <a href="#services">Servicios</a>
-          <a href="#contact">Contacto</a>
-        </div>
-      </div>
-    </footer>
+    <site-footer></site-footer>
 
     <dialog id="productDialog" class="product-dialog">
       <article class="dialog-card">
@@ -136,6 +105,8 @@
       </article>
     </template>
 
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
     <script src="script.js" defer></script>
   </body>
 </html>
