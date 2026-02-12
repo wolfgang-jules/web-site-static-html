@@ -12,7 +12,7 @@ class SiteHeader extends HTMLElement {
           </a>
 
           <nav class="topbar__nav" aria-label="Navegación principal">
-            <a href="home.html">Inicio</a>
+            <a href="index.html">Inicio</a>
             <a href="about.html">Quiénes somos</a>
             <a href="products.html">Productos</a>
             <a href="services.html">Servicios</a>
