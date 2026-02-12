@@ -1,5 +1,6 @@
 class SiteFooter extends HTMLElement {
   connectedCallback() {
+    const year = new Date().getFullYear();
     this.innerHTML = `
       <footer class="footer">
         <div class="container footer__content">
@@ -11,12 +12,16 @@ class SiteFooter extends HTMLElement {
             </p>
           </div>
           <div class="footer__links">
-            <a href="home.html">Inicio</a>
+            <a href="home.html">Home</a>
             <a href="about.html">Quiénes somos</a>
             <a href="products.html">Productos</a>
             <a href="services.html">Servicios</a>
             <a href="contact.html">Contacto</a>
           </div>
+        </div>
+        <div style="text-align:center; padding:12px 0; color:var(--muted); font-size:0.95rem;">
+          Copyright © 1999–${year} POSTEK-USA.<br />
+          Todos los derechos reservados.
         </div>
       </footer>
     `;
