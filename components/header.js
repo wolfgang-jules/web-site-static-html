@@ -16,7 +16,7 @@ class SiteHeader extends HTMLElement {
             <a href="about.html">Empresa</a>
             <a href="products.html">Productos</a>
             <a href="services.html">Servicios</a>
-            <a href="platform.html">Plataforma</a>
+            <a href="services.html#plataforma-servicios">Plataforma</a>
             <a href="contact.html">Contacto</a>
           </nav>
 
