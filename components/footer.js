@@ -11,7 +11,7 @@ class SiteFooter extends HTMLElement {
             </p>
           </div>
           <div class="footer__links">
-            <a href="index.html">Home</a>
+            <a href="home.html">Inicio</a>
             <a href="about.html">Quiénes somos</a>
             <a href="products.html">Productos</a>
             <a href="services.html">Servicios</a>
