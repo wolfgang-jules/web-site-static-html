@@ -3,7 +3,7 @@ class SiteHeader extends HTMLElement {
     this.innerHTML = `
       <header class="topbar">
         <div class="container topbar__content">
-          <a class="brand" href="home.html">
+          <a class="brand" href="index.html">
             <img class="brand__logo" src="images/logo-postek.png" alt="Logo de Postek" />
             <span>
               <strong>POSTEK</strong>
@@ -16,6 +16,10 @@ class SiteHeader extends HTMLElement {
             <a href="about.html">Quiénes somos</a>
             <a href="products.html">Productos</a>
             <a href="services.html">Servicios</a>
+            <a href="platform.html">Plataforma</a>
+            <a href="support.html">Soporte</a>
+            <a href="integrations.html">Integraciones</a>
+            <a href="use-cases.html">Casos de uso</a>
             <a href="contact.html">Contacto</a>
           </nav>
 

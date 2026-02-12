@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Postek | Productos</title>
+    <meta name="description" content="Catálogo técnico de terminales POS y hardware Verifone con especificaciones, casos de uso y cotización." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -14,21 +15,95 @@
     <site-header></site-header>
 
     <main>
-      <section class="section" id="products">
+      <section class="section section--alt">
         <div class="container">
           <div class="section__header section__header--split">
             <div>
-              <p class="tag">Products</p>
-              <h2>Catálogo Verifone</h2>
-              <p id="productsCounter" class="section__sub"></p>
+              <p class="tag">Productos</p>
+              <h2>Catálogo técnico de terminales POS y hardware</h2>
+              <p class="section__sub">
+                Selecciona equipos por necesidad operativa. Cada producto incluye imagen, descripción,
+                especificaciones técnicas y aplicación comercial.
+              </p>
             </div>
             <aside class="section__panel">
               <h3>Marca activa</h3>
               <p id="brandName">Verifone</p>
-              <small>Terminales fijas, móviles, PIN pads, autoservicio y soluciones de pago desatendido.</small>
+              <small>Cobro presencial, movilidad, autoservicio y escenarios especializados.</small>
             </aside>
           </div>
+
+          <div class="services-grid services-grid--2">
+            <article class="service-card">
+              <h3>Equipos disponibles</h3>
+              <ul class="card-list">
+                <li>POS móviles</li>
+                <li>POS fijos</li>
+                <li>Dispositivos Android</li>
+                <li>Accesorios</li>
+              </ul>
+            </article>
+            <article class="service-card">
+              <h3>Consumibles y conectividad</h3>
+              <ul class="card-list">
+                <li>SIM cards administradas</li>
+                <li>Planes de conectividad para terminales</li>
+                <li>Soporte para reemplazos y continuidad operativa</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="products">
+        <div class="container">
+          <div class="section__header">
+            <p class="tag">Catálogo dinámico</p>
+            <h2>Terminales POS Verifone</h2>
+            <p id="productsCounter" class="section__sub"></p>
+          </div>
           <div id="productsGrid" class="products-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section section--compact">
+        <div class="container">
+          <div class="section__header">
+            <p class="tag">Comparador rápido</p>
+            <h2>Referencia para evaluación inicial</h2>
+          </div>
+          <div class="table-wrap" role="region" aria-label="Comparador de productos">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th>Categoría</th>
+                  <th>Movilidad</th>
+                  <th>Tipo de comercio</th>
+                  <th>Conectividad</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>POS móvil</td>
+                  <td>Alta</td>
+                  <td>Delivery, servicios, retail ligero</td>
+                  <td>4G / Wi-Fi</td>
+                </tr>
+                <tr>
+                  <td>POS fijo</td>
+                  <td>Media</td>
+                  <td>Caja tradicional, supermercados</td>
+                  <td>Ethernet / Wi-Fi</td>
+                </tr>
+                <tr>
+                  <td>Android POS</td>
+                  <td>Alta</td>
+                  <td>Comercio omnicanal</td>
+                  <td>4G / Wi-Fi / BT</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
@@ -40,6 +115,7 @@
             <h3 id="dialogTitle"></h3>
             <p id="dialogDescription"></p>
             <div id="dialogSpecs" class="specs-grid"></div>
+            <a href="contact.html" class="btn btn--primary">Solicitar cotización</a>
           </div>
         </article>
       </dialog>
@@ -50,7 +126,7 @@
           <div class="product-card__content">
             <h3 class="product-card__title"></h3>
             <p class="product-card__description"></p>
-            <button class="btn btn--secondary">Ver detalles</button>
+            <button class="btn btn--secondary">Ver detalles y cotizar</button>
           </div>
         </article>
       </template>
