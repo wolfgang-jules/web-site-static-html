@@ -285,17 +285,17 @@ h1 {
 }
 
 .section {
-  padding: 78px 0;
+  padding: 62px 0;
 }
 
 .section--compact {
-  padding: 54px 0;
+  padding: 40px 0;
 }
 
 /* Separación visual entre secciones principales */
 .section + .section {
   border-top: 1px solid var(--border);
-  padding-top: 96px; /* aumenta el espacio entre secciones */
+  padding-top: 64px;
 }
 
 .section--alt {
@@ -305,7 +305,7 @@ h1 {
 }
 
 .section__header {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .section__header--split {
@@ -875,6 +875,25 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, minmax(180px, 1fr));
   gap: 16px;
+}
+
+/* Ajustes puntuales de espaciado en index: hero -> clientes -> países */
+#home {
+  padding-bottom: 20px;
+}
+
+#home + #clientes {
+  padding-top: 44px;
+  padding-bottom: 34px;
+}
+
+#clientes + .section.section--compact {
+  padding-top: 28px;
+}
+
+#clientes + .section.section--compact .trust-strip {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 @keyframes scrollClients {
