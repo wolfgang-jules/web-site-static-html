@@ -29,6 +29,7 @@ body.dark {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 84px;
 }
 
 body {
@@ -284,6 +285,12 @@ h1 {
 
 .section {
   padding: 78px 0;
+}
+
+/* Separación visual entre secciones principales */
+.section + .section {
+  border-top: 1px solid var(--border);
+  padding-top: 96px; /* aumenta el espacio entre secciones */
 }
 
 .section--alt {

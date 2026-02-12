@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postek | Productos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar__content">
+        <a class="brand" href="index.html">
+          <img class="brand__logo" src="images/logo-postek.png" alt="Logo de Postek" />
+          <span>
+            <strong>POSTEK</strong>
+            <small>Payment Solutions</small>
+          </span>
+        </a>
+
+        <nav class="topbar__nav" aria-label="Navegación principal">
+          <a href="index.html">Home</a>
+          <a href="about.html">Quiénes somos</a>
+          <a href="products.html">Productos</a>
+          <a href="services.html">Servicios</a>
+          <a href="contact.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="products">
+        <div class="container">
+          <div class="section__header section__header--split">
+            <div>
+              <p class="tag">Products</p>
+              <h2>Catálogo Verifone</h2>
+              <p id="productsCounter" class="section__sub"></p>
+            </div>
+            <aside class="section__panel">
+              <h3>Marca activa</h3>
+              <p id="brandName">Verifone</p>
+              <small>Terminales fijas, móviles, PIN pads, autoservicio y soluciones de pago desatendido.</small>
+            </aside>
+          </div>
+          <div id="productsGrid" class="products-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <dialog id="productDialog" class="product-dialog">
+        <article class="dialog-card">
+          <button id="closeDialog" class="dialog-close" aria-label="Cerrar detalles">×</button>
+          <img id="dialogImage" alt="Imagen de producto" />
+          <div>
+            <h3 id="dialogTitle"></h3>
+            <p id="dialogDescription"></p>
+            <div id="dialogSpecs" class="specs-grid"></div>
+          </div>
+        </article>
+      </dialog>
+
+      <template id="productTemplate">
+        <article class="product-card">
+          <img class="product-card__img" alt="" loading="lazy" />
+          <div class="product-card__content">
+            <h3 class="product-card__title"></h3>
+            <p class="product-card__description"></p>
+            <button class="btn btn--secondary">Ver detalles</button>
+          </div>
+        </article>
+      </template>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <div>
+          <strong>Postek</strong>
+          <p class="footer__contact">
+            Dirección: 14500 SW 32 ST, Miami, FL 33175<br />
+            Email: <a href="mailto:info@postek-usa.com">info@postek-usa.com</a>
+          </p>
+        </div>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="about.html">Quiénes somos</a>
+          <a href="products.html">Productos</a>
+          <a href="services.html">Servicios</a>
+          <a href="contact.html">Contacto</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
