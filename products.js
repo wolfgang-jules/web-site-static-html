@@ -95,6 +95,22 @@ function openDetails(product, image) {
   productDialog.showModal();
 }
 
+const JSON_FILES = ['./data/verifone.json'];
+
+async function fetchFirstAvailable(files) {
+  for (const file of files) {
+    try {
+      console.log('Attempting to fetch', file);
+      const res = await fetch(file);
+      if (res.ok) return { data: await res.json(), file };
+      console.warn('Fetch failed', file, res.status);
+    } catch (err) {
+      console.warn('Fetch error for', file, err && err.message);
+    }
+  }
+  throw new Error('No catalog JSON file found in data folder.');
+}
+
 async function initCatalog() {
   try {
     // Only initialize catalog if products or clients containers exist
@@ -102,13 +118,10 @@ async function initCatalog() {
       console.log('initCatalog: containers present', { clientsTrack: !!clientsTrack, productsGrid: !!productsGrid });
       createClientsCarousel();
 
-      console.log('Fetching catalog from', DATA_URL);
-      const response = await fetch(DATA_URL);
-      console.log('Fetch response', response);
-      if (!response.ok) throw new Error(`No se pudo cargar el catálogo (status ${response.status}).`);
-
-      const data = await response.json();
-      console.log('Catalog JSON loaded', data && (data.pages ? data.pages.length : 'no pages'));
+      console.log('Fetching catalog from fallback list');
+      const result = await fetchFirstAvailable(JSON_FILES);
+      const data = result.data;
+      console.log('Catalog JSON loaded from', result.file, data && (data.pages ? data.pages.length : 'no pages'));
       const brand = data.brand || 'verifone';
       const products = data.pages?.[0]?.products || [];
 
