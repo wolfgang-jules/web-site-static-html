@@ -558,7 +558,13 @@ h1 {
   font: inherit;
 }
 
+site-footer {
+  display: block;
+  margin-top: 64px;
+}
+
 .footer {
+  padding-top: 18px;
   border-top: 1px solid var(--border);
   background: color-mix(in srgb, var(--surface), transparent 8%);
 }
@@ -819,6 +825,15 @@ h1 {
   gap: 16px;
   align-items: center;
   justify-content: space-between;
+}
+
+.cta-band {
+  padding-top: 30px;
+  padding-bottom: 8px;
+}
+
+.cta-band + .section {
+  padding-top: 16px;
 }
 
 .cta-band__content h2 {
