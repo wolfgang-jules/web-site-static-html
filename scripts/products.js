@@ -12,13 +12,13 @@ const CLIENT_LOGOS = [
   { src: 'images/clients/farmacias-saba.jpg', alt: 'FARMACIAS SABA' },
 ];
 const BRANDS = [
-  { id: 'verifone', name: 'Verifone', logoSrc: 'images/brands/verifone.svg' },
-  { id: 'sunmi', name: 'Sunmi', logoSrc: 'images/brands/sunmi.svg' },
-  { id: 'newpos', name: 'Newpos', logoSrc: 'images/brands/newpos.svg' },
-  { id: 'landi', name: 'Landi', logoSrc: 'images/brands/landi.svg' },
-  { id: 'dspread', name: 'Dspread', logoSrc: 'images/brands/dspread.svg' },
-  { id: 'telpo', name: 'Telpo', logoSrc: 'images/brands/telpo.svg' },
-  { id: 'urovo', name: 'Urovo', logoSrc: 'images/brands/urovo.svg' },
+  { id: 'verifone', name: 'Verifone', logoSrc: 'images/brands/verifone.png' },
+  { id: 'sunmi', name: 'Sunmi', logoSrc: 'images/brands/sunmi.png' },
+  { id: 'newpos', name: 'Newpos', logoSrc: 'images/brands/newpos.png' },
+  { id: 'landi', name: 'Landi', logoSrc: 'images/brands/landi.png' },
+  { id: 'dspread', name: 'Dspread', logoSrc: 'images/brands/dspread.png' },
+  { id: 'telpo', name: 'Telpo', logoSrc: 'images/brands/telpo.png' },
+  { id: 'urovo', name: 'Urovo', logoSrc: 'images/brands/urovo.png' },
 ];
 
 const productsGrid = document.querySelector('#productsGrid');
