@@ -1,11 +1,15 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/img/favicon.png" />
+    <title>Empresa | POSTEK-USA</title>
+    <meta
+      name="description"
+      content="Información corporativa de POSTEK-USA, integrador de soluciones POS y softPOS para banca y comercios."
+    />
+    <link rel="stylesheet" href="styles/style.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -19,16 +23,19 @@
   <body>
     <site-header></site-header>
 
-    <main>
-      <section class="section section--alt page-intro" id="empresa">
-        <div class="container">
-          <p class="tag">Empresa</p>
-          <h1>Solidez institucional para proyectos de pago de alta exigencia</h1>
-          <p class="section__sub">Construimos confianza con experiencia regional, capacidad técnica y respaldo operativo.</p>
+    <main id="main-content">
+      <section class="section" id="empresa">
+        <div class="r-container">
+          <div class="bg-title second mb-3">
+            <img src="assets/img/Vector 1.png" class="img-fluid" alt="" />
+            <h6 class="m-0">Empresa</h6>
+          </div>
+          <h1 class="site-main-title">Solidez institucional para proyectos de pago de alta exigencia</h1>
+          <p class="site-lead">Construimos confianza con experiencia regional, capacidad técnica y respaldo operativo.</p>
         </div>
       </section>
 
-      <nav class="anchor-nav" aria-label="Navegación interna de empresa">
+      <nav class="site-anchor-nav section pt-0" aria-label="Navegación interna de empresa">
         <a href="#sobre">Sobre la Empresa</a>
         <a href="#mision-vision">Misión y visión</a>
         <a href="#presencia">Presencia internacional</a>
@@ -37,36 +44,41 @@
       </nav>
 
       <section class="section" id="sobre">
-        <div class="container">
-          <div class="section__header">
-            <p class="tag">Sobre la Empresa</p>
-            <h2>Historia, experiencia y posicionamiento</h2>
+        <div class="r-container">
+          <div class="bg-title second mb-3">
+            <img src="assets/img/Vector 8.png" class="img-fluid" alt="" />
+            <h6 class="m-0">Sobre la Empresa</h6>
           </div>
-          <div class="services-grid services-grid--2">
-            <article class="service-card">
+          <h2>Historia, experiencia y posicionamiento</h2>
+          <div class="site-card-grid mt-4">
+            <article class="site-card">
               <h3>Historia</h3>
               <p>Desde 1999, POSTEK acompaña a empresas e instituciones financieras en su evolución de medios de pago.</p>
             </article>
-            <article class="service-card">
+            <article class="site-card">
               <h3>Posicionamiento</h3>
-              <p>Proveedor especializado en infraestructura tecnológica, hardware POS, softPOS, integración y operación regional.</p>
+              <p>
+                Proveedor especializado en infraestructura tecnológica, hardware POS, softPOS, integración y operación
+                regional.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--alt" id="mision-vision">
-        <div class="container">
-          <div class="section__header">
-            <p class="tag">Misión y visión</p>
-            <h2>Enfoque estratégico orientado a continuidad e innovación</h2>
+      <section class="section" id="mision-vision">
+        <div class="r-container">
+          <div class="bg-title second mb-3">
+            <img src="assets/img/Vector 3.png" class="img-fluid" alt="" />
+            <h6 class="m-0">Misión y visión</h6>
           </div>
-          <div class="services-grid services-grid--2">
-            <article class="service-card">
+          <h2>Enfoque estratégico orientado a continuidad e innovación</h2>
+          <div class="site-card-grid mt-4">
+            <article class="site-card">
               <h3>Misión</h3>
               <p>Impulsar eficiencia operativa con soluciones de pago seguras, integradas y escalables.</p>
             </article>
-            <article class="service-card">
+            <article class="site-card">
               <h3>Visión</h3>
               <p>Ser el socio tecnológico referente en infraestructura de pagos y excelencia de servicio en la región.</p>
             </article>
@@ -75,37 +87,39 @@
       </section>
 
       <section class="section" id="presencia">
-        <div class="container">
-          <div class="section__header">
-            <p class="tag">Presencia internacional</p>
-            <h2>Cobertura geográfica y alcance regional</h2>
+        <div class="r-container">
+          <div class="bg-title second mb-3">
+            <img src="assets/img/Vector 5.png" class="img-fluid" alt="" />
+            <h6 class="m-0">Presencia internacional</h6>
           </div>
-          <div class="flag-list" aria-label="Países con presencia">
-            <span class="flag-chip"><img src="images/flags/us.svg" alt="Estados Unidos" loading="lazy" />Estados Unidos</span>
-            <span class="flag-chip"><img src="images/flags/mx.svg" alt="México" loading="lazy" />México</span>
-            <span class="flag-chip"><img src="images/flags/gt.svg" alt="Guatemala" loading="lazy" />Guatemala</span>
-            <span class="flag-chip"><img src="images/flags/sv.svg" alt="El Salvador" loading="lazy" />El Salvador</span>
-            <span class="flag-chip"><img src="images/flags/bz.svg" alt="Belice" loading="lazy" />Belice</span>
-            <span class="flag-chip"><img src="images/flags/hn.svg" alt="Honduras" loading="lazy" />Honduras</span>
-            <span class="flag-chip"><img src="images/flags/ni.svg" alt="Nicaragua" loading="lazy" />Nicaragua</span>
-            <span class="flag-chip"><img src="images/flags/cr.svg" alt="Costa Rica" loading="lazy" />Costa Rica</span>
-            <span class="flag-chip"><img src="images/flags/pa.svg" alt="Panamá" loading="lazy" />Panamá</span>
-            <span class="flag-chip"><img src="images/flags/do.svg" alt="República Dominicana" loading="lazy" />República Dominicana</span>
-            <span class="flag-chip"><img src="images/flags/pr.svg" alt="Puerto Rico" loading="lazy" />Puerto Rico</span>
-            <span class="flag-chip"><img src="images/flags/es.svg" alt="España" loading="lazy" />España</span>
-            <span class="flag-chip"><img src="images/flags/ec.svg" alt="Ecuador" loading="lazy" />Ecuador</span>
-            <span class="flag-chip"><img src="images/flags/bo.svg" alt="Bolivia" loading="lazy" />Bolivia</span>
+          <h2>Cobertura geográfica y alcance regional</h2>
+          <div class="site-chip-grid mt-4" aria-label="Países con presencia">
+            <span class="site-chip"><img src="images/flags/us.svg" alt="Estados Unidos" loading="lazy" />Estados Unidos</span>
+            <span class="site-chip"><img src="images/flags/mx.svg" alt="México" loading="lazy" />México</span>
+            <span class="site-chip"><img src="images/flags/gt.svg" alt="Guatemala" loading="lazy" />Guatemala</span>
+            <span class="site-chip"><img src="images/flags/sv.svg" alt="El Salvador" loading="lazy" />El Salvador</span>
+            <span class="site-chip"><img src="images/flags/bz.svg" alt="Belice" loading="lazy" />Belice</span>
+            <span class="site-chip"><img src="images/flags/hn.svg" alt="Honduras" loading="lazy" />Honduras</span>
+            <span class="site-chip"><img src="images/flags/ni.svg" alt="Nicaragua" loading="lazy" />Nicaragua</span>
+            <span class="site-chip"><img src="images/flags/cr.svg" alt="Costa Rica" loading="lazy" />Costa Rica</span>
+            <span class="site-chip"><img src="images/flags/pa.svg" alt="Panamá" loading="lazy" />Panamá</span>
+            <span class="site-chip"><img src="images/flags/do.svg" alt="República Dominicana" loading="lazy" />República Dominicana</span>
+            <span class="site-chip"><img src="images/flags/pr.svg" alt="Puerto Rico" loading="lazy" />Puerto Rico</span>
+            <span class="site-chip"><img src="images/flags/es.svg" alt="España" loading="lazy" />España</span>
+            <span class="site-chip"><img src="images/flags/ec.svg" alt="Ecuador" loading="lazy" />Ecuador</span>
+            <span class="site-chip"><img src="images/flags/bo.svg" alt="Bolivia" loading="lazy" />Bolivia</span>
           </div>
         </div>
       </section>
 
-      <section class="section section--alt" id="equipo">
-        <div class="container">
-          <div class="section__header">
-            <p class="tag">Equipo y capacidades</p>
-            <h2>Personal técnico y operativo para ejecución de proyectos complejos</h2>
+      <section class="section" id="equipo">
+        <div class="r-container">
+          <div class="bg-title second mb-3">
+            <img src="assets/img/Vector 10.png" class="img-fluid" alt="" />
+            <h6 class="m-0">Equipo y capacidades</h6>
           </div>
-          <ul class="check-list check-list--cols">
+          <h2>Personal técnico y operativo para ejecución de proyectos complejos</h2>
+          <ul class="site-check-list site-check-list--2 mt-4">
             <li>Especialistas en integración de pagos y conectividad.</li>
             <li>Capacidad de despliegue y monitoreo regional.</li>
             <li>Gestión de proyecto orientada a continuidad operativa.</li>
@@ -115,25 +129,28 @@
       </section>
 
       <section class="section" id="confianza">
-        <div class="container">
-          <div class="section__header">
-            <p class="tag">Confianza institucional</p>
-            <h2>Respaldo, cumplimiento y estándares operativos</h2>
+        <div class="r-container">
+          <div class="bg-title second mb-3">
+            <img src="assets/img/Vector 12.png" class="img-fluid" alt="" />
+            <h6 class="m-0">Confianza institucional</h6>
           </div>
-          <div class="services-grid services-grid--2">
-            <article class="service-card">
+          <h2>Respaldo, cumplimiento y estándares operativos</h2>
+          <div class="site-card-grid mt-4">
+            <article class="site-card">
               <h3>Respaldo operativo</h3>
               <p>Procesos formales de implementación, soporte y control de calidad para operaciones críticas.</p>
             </article>
-            <article class="service-card">
+            <article class="site-card">
               <h3>Cumplimiento</h3>
               <p>Prácticas de seguridad y gestión alineadas con estándares internacionales del sector de pagos.</p>
             </article>
-            <article class="service-card">
+            <article class="site-card">
               <h3>Confianza de la banca</h3>
-              <p>Colaboracion con bancos como BANPRO, LAFISE, BAC, BDF y FICOHSA (FICOSHA) en proyectos de medios de pago.</p>
+              <p>
+                Colaboración con bancos como BANPRO, LAFISE, BAC, BDF y FICOHSA (FICOSHA) en proyectos de medios de pago.
+              </p>
             </article>
-            <article class="service-card">
+            <article class="site-card">
               <h3>Ecosistema de tarjetas y pagos</h3>
               <p>Integraciones con Visa, Mastercard, American Express, Diners Club, Apple Pay y Google Pay.</p>
             </article>
@@ -143,9 +160,8 @@
     </main>
 
     <site-footer></site-footer>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js" defer></script>
     <script src="components/header.js" defer></script>
     <script src="components/footer.js" defer></script>
-    <script src="scripts/products.js" defer></script>
   </body>
 </html>
-

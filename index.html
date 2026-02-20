@@ -1,17 +1,15 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/img/favicon.png" />
+    <title>POSTEK-USA | Soluciones POS y SoftPOS</title>
+    <meta
+      name="description"
+      content="Soluciones de pago para bancos, instituciones financieras y empresas que necesitan POS y softPOS."
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -70,230 +68,244 @@
     </script>
   </head>
   <body>
-
     <site-header></site-header>
 
-    <main>
-      <section class="secction section--compact" id="home">
-        <div class="hero__bg" aria-hidden="true"></div>
-        <div class="container hero__grid">
-          <div>
-            <p class="tag">Soluciones B2B</p>
-            <h1>Proveedor de infraestructura de pagos electrónicos entre comercios, bancos y redes de tarjetas</h1>
-            <p class="hero__lead">
-              Terminales POS, softPOS y plataformas de administración integral para bancos, instituciones
-              financieras, comercios, restaurantes, gasolineras y empresas de servicios.
-            </p>
-            <div class="hero__actions">
-              <a href="products.html" class="btn btn--primary">Ver productos</a>
-              <a href="contact.html" class="btn btn--ghost">Solicitar asesoría</a>
+    <main id="main-content">
+      <section class="section">
+        <div class="r-container">
+          <div class="row row-cols-xl-2 row-cols-1 align-items-center g-4">
+            <div class="col">
+              <div class="bg-title second mb-3">
+                <img src="assets/img/Vector 2.png" class="img-fluid" alt="" />
+                <h6 class="m-0">Soluciones B2B</h6>
+              </div>
+              <h1 class="site-main-title">Proveedor de infraestructura de pagos electrónicos entre comercios, bancos y redes de tarjetas</h1>
+              <p class="site-lead">
+                Terminales POS, softPOS y plataformas de administración integral para bancos, instituciones
+                financieras, comercios, restaurantes, gasolineras y empresas de servicios.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <a href="products.html" class="btn btn-accent">
+                  <span>Ver productos</span>
+                  <div class="icon-box">
+                    <i aria-hidden="true" class="rtmicon rtmicon-arrow-right"></i>
+                  </div>
+                </a>
+                <a href="contact.html" class="btn btn-accent-3 cta">Solicitar asesoría</a>
+              </div>
+              <div class="site-metrics mt-4" aria-label="Indicadores de servicio">
+                <article class="site-metric d-flex flex-column">
+                  <strong>+25 años</strong>
+                  <span>Experiencia regional</span>
+                </article>
+                <article class="site-metric d-flex flex-column">
+                  <strong>+2,000</strong>
+                  <span>Clientes PYMES</span>
+                </article>
+                <article class="site-metric d-flex flex-column">
+                  <strong>+14 países</strong>
+                  <span>Integración bancaria internacional</span>
+                </article>
+              </div>
             </div>
-            <div class="hero__metrics" aria-label="Indicadores de servicio">
-              <article>
-                <strong>+25 años</strong>
-                <span>Experiencia regional</span>
+            <div class="col">
+              <article class="site-hero-panel d-flex flex-column gap-3">
+                <h2>Conectamos hardware, software e integraciones para operar pagos sin fricción</h2>
+                <ul class="site-inline-list">
+                  <li>Terminales POS y hardware certificado.</li>
+                  <li>Plataforma de administración y monitoreo 24/7.</li>
+                  <li>Desarrollo personalizado y soporte continuo.</li>
+                </ul>
+                <a href="contact.html" class="btn btn-accent w-max-content">
+                  <span>Contactar ahora</span>
+                  <div class="icon-box">
+                    <i aria-hidden="true" class="rtmicon rtmicon-arrow-right"></i>
+                  </div>
+                </a>
               </article>
-              <article>
-                <strong>+2,000</strong>
-                <span>Clientes PYMES</span>
-              </article>
-              <article>
-                <strong>+14 Paises</strong>
-                <span>Integración bancaria internacional</span>
-              </article>
-            </div>
-          </div>
-
-          <aside class="hero__card">
-            <p class="hero__card-kicker">Infraestructura end-to-end</p>
-            <h2>Conectamos hardware, software e integraciones para operar pagos sin fricción</h2>
-            <ul>
-              <li>Terminales POS y hardware certificado</li>
-              <li>Plataforma de administración y monitoreo 24/7</li>
-              <li>Desarrollo personalizado y soporte continuo</li>
-            </ul>
-            <a href="contact.html" class="btn btn--secondary">Contactar ahora</a>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section section--compact" id="paises">
-        <div class="container trust-strip">
-          <p>
-            Más de 25 años de experiencia con presencia internacional y más de 2,000 clientes PYMES.
-          </p>
-          <div class="flag-list" aria-label="Países en operación">
-            <span class="flag-chip"><img src="images/flags/us.svg" alt="Estados Unidos" loading="lazy" />Estados Unidos</span>
-            <span class="flag-chip"><img src="images/flags/mx.svg" alt="México" loading="lazy" />México</span>
-            <span class="flag-chip"><img src="images/flags/gt.svg" alt="Guatemala" loading="lazy" />Guatemala</span>
-            <span class="flag-chip"><img src="images/flags/sv.svg" alt="El Salvador" loading="lazy" />El Salvador</span>
-            <span class="flag-chip"><img src="images/flags/bz.svg" alt="Belice" loading="lazy" />Belice</span>
-            <span class="flag-chip"><img src="images/flags/hn.svg" alt="Honduras" loading="lazy" />Honduras</span>
-            <span class="flag-chip"><img src="images/flags/ni.svg" alt="Nicaragua" loading="lazy" />Nicaragua</span>
-            <span class="flag-chip"><img src="images/flags/cr.svg" alt="Costa Rica" loading="lazy" />Costa Rica</span>
-            <span class="flag-chip"><img src="images/flags/pa.svg" alt="Panamá" loading="lazy" />Panamá</span>
-            <span class="flag-chip"><img src="images/flags/do.svg" alt="República Dominicana" loading="lazy" />Dominicana</span>
-            <span class="flag-chip"><img src="images/flags/pr.svg" alt="Puerto Rico" loading="lazy" />Puerto Rico</span>
-            <span class="flag-chip"><img src="images/flags/ec.svg" alt="Ecuador" loading="lazy" />Ecuador</span>
-            <span class="flag-chip"><img src="images/flags/bo.svg" alt="Bolivia" loading="lazy" />Bolivia</span>
-            <span class="flag-chip"><img src="images/flags/es.svg" alt="España" loading="lazy" />España</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--compact" id="clientes">
-        <div class="container">
-          <div class="section__header">
-            <p class="tag">Confianza regional</p>
-            <h2>Nuestros Clientes:</h2>
-          </div>
-          <div class="client-carousel" aria-label="Clientes destacados">
-            <div id="clientsTrack" class="client-carousel__track"></div>
-          </div>
-        </div>
-      </section>
-      <section class="section section--compact" id="integraciones-home">
-        <div class="container">
-          <div class="section__header">
-            <p class="tag">Integraciones destacadas</p>
-            <h2>Compatibilidad con procesadores y billeteras digitales</h2>
-          </div>
-          <div class="integration-carousel" aria-label="Integraciones compatibles">
-            <div class="integration-carousel__track">
-              <div class="logo-chip">
-                <img src="images/payments-networks/visa.svg" alt="Logo VISA" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/mastercard.svg" alt="Logo Mastercard" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/amex.svg" alt="Logo AMEX" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/apple-pay.svg" alt="Logo Apple Pay" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/google-pay.svg" alt="Logo Google Pay" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/diners-club.svg" alt="Logo Diners Club International" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/fitbit.svg" alt="Logo Fitbit" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/garmin.svg" alt="Logo Garmin" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/visa.svg" alt="Logo VISA" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/mastercard.svg" alt="Logo Mastercard" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/amex.svg" alt="Logo AMEX" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/apple-pay.svg" alt="Logo Apple Pay" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/google-pay.svg" alt="Logo Google Pay" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/diners-club.svg" alt="Logo Diners Club International" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/fitbit.svg" alt="Logo Fitbit" loading="lazy" />
-              </div>
-              <div class="logo-chip">
-                <img src="images/payments-networks/garmin.svg" alt="Logo Garmin" loading="lazy" />
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section--compact" id="soluciones">
-        <div class="container">
-          <div class="section__header">
-            <p class="tag">Resumen de soluciones</p>
-            <h2>Elige la solución que necesitas</h2>
+      <section class="section pt-0">
+        <div class="r-container">
+          <div class="site-banner d-flex flex-column gap-3">
+            <p class="m-0">Más de 25 años de experiencia con presencia internacional y más de 2,000 clientes PYMES.</p>
+            <div class="site-chip-grid" aria-label="Países en operación">
+              <span class="site-chip"><img src="images/flags/us.svg" alt="Estados Unidos" loading="lazy" />Estados Unidos</span>
+              <span class="site-chip"><img src="images/flags/mx.svg" alt="México" loading="lazy" />México</span>
+              <span class="site-chip"><img src="images/flags/gt.svg" alt="Guatemala" loading="lazy" />Guatemala</span>
+              <span class="site-chip"><img src="images/flags/sv.svg" alt="El Salvador" loading="lazy" />El Salvador</span>
+              <span class="site-chip"><img src="images/flags/bz.svg" alt="Belice" loading="lazy" />Belice</span>
+              <span class="site-chip"><img src="images/flags/hn.svg" alt="Honduras" loading="lazy" />Honduras</span>
+              <span class="site-chip"><img src="images/flags/ni.svg" alt="Nicaragua" loading="lazy" />Nicaragua</span>
+              <span class="site-chip"><img src="images/flags/cr.svg" alt="Costa Rica" loading="lazy" />Costa Rica</span>
+              <span class="site-chip"><img src="images/flags/pa.svg" alt="Panamá" loading="lazy" />Panamá</span>
+              <span class="site-chip"><img src="images/flags/do.svg" alt="República Dominicana" loading="lazy" />República Dominicana</span>
+              <span class="site-chip"><img src="images/flags/pr.svg" alt="Puerto Rico" loading="lazy" />Puerto Rico</span>
+              <span class="site-chip"><img src="images/flags/ec.svg" alt="Ecuador" loading="lazy" />Ecuador</span>
+              <span class="site-chip"><img src="images/flags/bo.svg" alt="Bolivia" loading="lazy" />Bolivia</span>
+              <span class="site-chip"><img src="images/flags/es.svg" alt="España" loading="lazy" />España</span>
+            </div>
           </div>
-          <div class="link-cards">
-            <a class="service-card service-card--link" href="products.html">
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="r-container">
+          <div class="bg-title second mb-3">
+            <img src="assets/img/Vector 8.png" class="img-fluid" alt="" />
+            <h6 class="m-0">Confianza regional</h6>
+          </div>
+          <h2>Nuestros clientes</h2>
+          <div class="site-logo-grid mt-4" aria-label="Clientes destacados">
+            <div class="site-logo-chip"><img src="images/clients/bac.png" alt="BAC" loading="lazy" /></div>
+            <div class="site-logo-chip"><img src="images/clients/banpro.png" alt="BANPRO" loading="lazy" /></div>
+            <div class="site-logo-chip"><img src="images/clients/ficohsa.jpg" alt="FICOHSA" loading="lazy" /></div>
+            <div class="site-logo-chip"><img src="images/clients/lafise.png" alt="LAFISE" loading="lazy" /></div>
+            <div class="site-logo-chip"><img src="images/clients/farmacias-saba.jpg" alt="Farmacias Saba" loading="lazy" /></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="r-container">
+          <div class="bg-title second mb-3">
+            <img src="assets/img/Vector 13.png" class="img-fluid" alt="" />
+            <h6 class="m-0">Integraciones destacadas</h6>
+          </div>
+          <h2>Compatibilidad con procesadores y billeteras digitales</h2>
+          <div class="site-logo-grid mt-4" aria-label="Integraciones compatibles">
+            <div class="site-logo-chip"><img src="images/payments-networks/visa.svg" alt="Visa" loading="lazy" /></div>
+            <div class="site-logo-chip"><img src="images/payments-networks/mastercard.svg" alt="Mastercard" loading="lazy" /></div>
+            <div class="site-logo-chip"><img src="images/payments-networks/amex.svg" alt="American Express" loading="lazy" /></div>
+            <div class="site-logo-chip"><img src="images/payments-networks/apple-pay.svg" alt="Apple Pay" loading="lazy" /></div>
+            <div class="site-logo-chip"><img src="images/payments-networks/google-pay.svg" alt="Google Pay" loading="lazy" /></div>
+            <div class="site-logo-chip"><img src="images/payments-networks/diners-club.svg" alt="Diners Club" loading="lazy" /></div>
+            <div class="site-logo-chip"><img src="images/payments-networks/fitbit.svg" alt="Fitbit Pay" loading="lazy" /></div>
+            <div class="site-logo-chip"><img src="images/payments-networks/garmin.svg" alt="Garmin Pay" loading="lazy" /></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="r-container">
+          <div class="bg-title second mb-3">
+            <img src="assets/img/Vector 10.png" class="img-fluid" alt="" />
+            <h6 class="m-0">Resumen de soluciones</h6>
+          </div>
+          <h2>Elige la solución que necesitas</h2>
+          <div class="site-card-grid mt-4">
+            <article class="site-card">
               <h3>Terminales POS y hardware</h3>
               <p>Equipos móviles, fijos y Android para diferentes escenarios de cobro.</p>
-            </a>
-            <a class="service-card service-card--link" href="services.html#plataforma-servicios">
+              <a href="products.html" class="btn btn-accent w-max-content">
+                <span>Ir a productos</span>
+                <div class="icon-box">
+                  <i aria-hidden="true" class="rtmicon rtmicon-arrow-right"></i>
+                </div>
+              </a>
+            </article>
+            <article class="site-card">
               <h3>Plataforma de administración</h3>
               <p>Gestión remota, actualización de terminales, analítica y monitoreo.</p>
-            </a>
-            <a class="service-card service-card--link" href="services.html#integraciones">
+              <a href="services.html#plataforma-servicios" class="btn btn-accent w-max-content">
+                <span>Ver plataforma</span>
+                <div class="icon-box">
+                  <i aria-hidden="true" class="rtmicon rtmicon-arrow-right"></i>
+                </div>
+              </a>
+            </article>
+            <article class="site-card">
               <h3>Integraciones de pago</h3>
               <p>Compatibilidad con procesadores, redes y billeteras digitales.</p>
-            </a>
-            <a class="service-card service-card--link" href="services.html">
+              <a href="services.html#integraciones" class="btn btn-accent w-max-content">
+                <span>Ver integraciones</span>
+                <div class="icon-box">
+                  <i aria-hidden="true" class="rtmicon rtmicon-arrow-right"></i>
+                </div>
+              </a>
+            </article>
+            <article class="site-card">
               <h3>Sistema de facturación integral</h3>
               <p>Facturación electrónica, inventario, talento humano y reportes.</p>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--compact" id="ecosistema-financiero">
-        <div class="container">
-          <div class="section__header">
-            <p class="tag">Ecosistema financiero y comercial</p>
-            <h2>Integraciones para banca, adquirencia y negocios con pagos con tarjeta</h2>
-            <p class="section__sub">
-              POSTEK-USA trabaja con bancos como BANPRO, LAFISE, BAC, BDF y FICOHSA, e integra redes como
-              Visa, Mastercard, American Express, Diners Club, Apple Pay, Google Pay, Fitbit y Garmin.
-            </p>
-          </div>
-          <div class="services-grid services-grid--2">
-            <article class="service-card">
-              <h3>Marcas de dispositivos POS</h3>
-              <p>Verifone, Sunmi, NewPOS (Newpost), Landi, Dspread, Telpo y Urovo para diferentes escenarios de cobro.</p>
-            </article>
-            <article class="service-card">
-              <h3>Facturacion y operacion comercial</h3>
-              <p>Partnership con Solo System para restaurantes, cafeterias, bares, farmacias y tiendas en general.</p>
+              <a href="services.html#facturacion" class="btn btn-accent w-max-content">
+                <span>Ver facturación</span>
+                <div class="icon-box">
+                  <i aria-hidden="true" class="rtmicon rtmicon-arrow-right"></i>
+                </div>
+              </a>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--compact" id="presencia">
-        <div class="container">
-          <div class="section__header section__header--split">
-            <div>
-              <p class="tag">Presencia internacional</p>
-              <h2>Operación regional con soporte local</h2>
-              <p class="section__sub">
-                Atención técnica y comercial en Estados Unidos, Guatemala, Honduras, Nicaragua, Costa Rica y Panamá.
+      <section class="section">
+        <div class="r-container">
+          <div class="row row-cols-lg-2 row-cols-1 g-4">
+            <div class="col">
+              <div class="bg-title second mb-3">
+                <img src="assets/img/Vector 9.png" class="img-fluid" alt="" />
+                <h6 class="m-0">Ecosistema financiero y comercial</h6>
+              </div>
+              <h2>Integraciones para banca, adquirencia y negocios con pagos con tarjeta</h2>
+              <p>
+                POSTEK-USA trabaja con bancos como BANPRO, LAFISE, BAC, BDF y FICOHSA, e integra redes como Visa,
+                Mastercard, American Express, Diners Club, Apple Pay, Google Pay, Fitbit y Garmin.
               </p>
             </div>
-            <aside class="section__panel">
-              <h3>Cobertura activa</h3>
-              <p>6 países</p>
-              <small>Implementaciones bancarias, retail, restaurantes y servicios.</small>
-            </aside>
+            <div class="col">
+              <div class="site-card-grid">
+                <article class="site-card">
+                  <h3>Marcas de dispositivos POS</h3>
+                  <p>Verifone, Sunmi, NewPOS (Newpost), Landi, Dspread, Telpo y Urovo para diferentes escenarios de cobro.</p>
+                </article>
+                <article class="site-card">
+                  <h3>Facturación y operación comercial</h3>
+                  <p>Partnership con Solo System para restaurantes, cafeterías, bares, farmacias y tiendas en general.</p>
+                </article>
+              </div>
+            </div>
           </div>
-          <ul class="check-list">
-            <li>Infraestructura tecnológica desplegada para operación continua.</li>
-            <li>Capacidad de certificación e integración con múltiples adquirentes.</li>
-            <li>Equipos técnicos especializados por tipo de industria.</li>
-          </ul>
         </div>
       </section>
 
-      <section class="section section--compact">
-        <div class="container">
-          <div class="section__header">
-            <p class="tag">Ventajas competitivas</p>
-            <h2>Por qué las empresas trabajan con POSTEK</h2>
+      <section class="section">
+        <div class="r-container">
+          <div class="row row-cols-lg-2 row-cols-1 g-4 align-items-center">
+            <div class="col">
+              <div class="bg-title second mb-3">
+                <img src="assets/img/Vector 5.png" class="img-fluid" alt="" />
+                <h6 class="m-0">Presencia internacional</h6>
+              </div>
+              <h2>Operación regional con soporte local</h2>
+              <p>Atención técnica y comercial en Estados Unidos, Guatemala, Honduras, Nicaragua, Costa Rica y Panamá.</p>
+              <ul class="site-check-list">
+                <li>Infraestructura tecnológica desplegada para operación continua.</li>
+                <li>Capacidad de certificación e integración con múltiples adquirentes.</li>
+                <li>Equipos técnicos especializados por tipo de industria.</li>
+              </ul>
+            </div>
+            <div class="col">
+              <article class="site-hero-panel">
+                <h3>Cobertura activa</h3>
+                <p class="m-0">6 países</p>
+                <p class="m-0">Implementaciones bancarias, retail, restaurantes y servicios.</p>
+              </article>
+            </div>
           </div>
-          <ul class="check-list check-list--cols">
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="r-container">
+          <div class="bg-title second mb-3">
+            <img src="assets/img/Vector 4.png" class="img-fluid" alt="" />
+            <h6 class="m-0">Ventajas competitivas</h6>
+          </div>
+          <h2>Por qué las empresas trabajan con POSTEK</h2>
+          <ul class="site-check-list site-check-list--2 mt-4">
             <li>Infraestructura tecnológica end-to-end.</li>
             <li>Desarrollo personalizado por vertical.</li>
             <li>Soporte continuo con cobertura regional.</li>
@@ -302,20 +314,24 @@
         </div>
       </section>
 
-      <section class="section section--compact">
-        <div class="container cta-band__content">
-          <h2>Hable con un especialista en soluciones de pago</h2>
-          <a href="contact.html" class="btn btn--primary">Contactar ahora</a>
+      <section class="section">
+        <div class="r-container">
+          <div class="bg-color p-4 rounded-4 d-flex flex-lg-row flex-column gap-3 align-items-lg-center justify-content-between">
+            <h2 class="m-0">Hable con un especialista en soluciones de pago</h2>
+            <a href="contact.html" class="btn btn-accent">
+              <span>Contactar ahora</span>
+              <div class="icon-box">
+                <i aria-hidden="true" class="rtmicon rtmicon-arrow-right"></i>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
-
     </main>
 
     <site-footer></site-footer>
-
+    <script src="assets/js/vendor/bootstrap.bundle.min.js" defer></script>
     <script src="components/header.js" defer></script>
     <script src="components/footer.js" defer></script>
-    <script src="scripts/products.js" defer></script>
   </body>
 </html>
-

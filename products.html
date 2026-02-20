@@ -1,11 +1,15 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/img/favicon.png" />
+    <title>Productos POS | POSTEK-USA</title>
+    <meta
+      name="description"
+      content="Catálogo técnico de terminales POS y hardware para banca y comercios con fichas de referencia."
+    />
+    <link rel="stylesheet" href="styles/style.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -13,91 +17,82 @@
         "name": "Catalogo de terminales POS POSTEK-USA",
         "url": "https://www.postek-usa.com/products.html",
         "description": "Catalogo de dispositivos POS para cobros presenciales y sin contacto.",
-        "about": [
-          "Verifone",
-          "Sunmi",
-          "NewPOS",
-          "Newpost",
-          "Landi",
-          "Dspread",
-          "Telpo",
-          "Urovo"
-        ]
+        "about": ["Verifone", "Sunmi", "NewPOS", "Newpost", "Landi", "Dspread", "Telpo", "Urovo"]
       }
     </script>
   </head>
   <body>
     <site-header></site-header>
 
-    <main>
-      <section class="section section--alt">
-        <div class="container">
-          <div class="section__header section__header--split">
-            <div>
-              <p class="tag">Productos</p>
-              <h1>Catalogo tecnico de terminales POS y hardware para banca y comercios</h1>
-              <p class="section__sub">
+    <main id="main-content">
+      <section class="section">
+        <div class="r-container">
+          <div class="row row-cols-lg-2 row-cols-1 align-items-center g-4">
+            <div class="col">
+              <div class="bg-title second mb-3">
+                <img src="assets/img/Vector 1.png" class="img-fluid" alt="" />
+                <h6 class="m-0">Productos</h6>
+              </div>
+              <h1 class="site-main-title">Catálogo técnico de terminales POS y hardware para banca y comercios</h1>
+              <p>
                 Selecciona equipos por necesidad operativa. Cada producto incluye imagen, descripción,
                 especificaciones técnicas y aplicación comercial.
               </p>
             </div>
-            <aside class="section__panel">
-              <h3>Marca activa</h3>
-              <p id="brandName">Verifone</p>
-              <small>Cobro presencial, movilidad, autoservicio y escenarios especializados.</small>
-            </aside>
-          </div>
-
-          <div class="services-grid services-grid--2">
-            <article class="service-card">
-              <h3>Equipos disponibles</h3>
-              <ul class="card-list">
-                <li>POS móviles</li>
-                <li>POS fijos</li>
-                <li>Dispositivos Android</li>
-                <li>Accesorios</li>
-              </ul>
-            </article>
-            <article class="service-card">
-              <h3>Consumibles y conectividad</h3>
-              <ul class="card-list">
-                <li>SIM cards administradas</li>
-                <li>Planes de conectividad para terminales</li>
-                <li>Soporte para reemplazos y continuidad operativa</li>
-              </ul>
-            </article>
+            <div class="col">
+              <article class="site-hero-panel d-flex flex-column gap-2">
+                <h3 class="m-0">Marca activa</h3>
+                <p id="brandName" class="m-0">Todas las marcas</p>
+                <small>Cobro presencial, movilidad, autoservicio y escenarios especializados.</small>
+                <ul class="site-inline-list mt-2">
+                  <li>POS móviles.</li>
+                  <li>POS fijos.</li>
+                  <li>Dispositivos Android.</li>
+                  <li>Accesorios, consumibles y conectividad.</li>
+                </ul>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="products">
-        <div class="container">
-          <div class="section__header">
-            <p class="tag">Equipos y Marcas Proveídas</p>
+      <section class="section pt-0" id="products">
+        <div class="r-container d-flex flex-column gap-4">
+          <div>
+            <div class="bg-title second mb-3">
+              <img src="assets/img/Vector 3.png" class="img-fluid" alt="" />
+              <h6 class="m-0">Equipos y marcas proveídas</h6>
+            </div>
             <h2>Selecciona una marca de equipos</h2>
-            <p class="section__sub">Marcas disponibles: Verifone, Sunmi, NewPOS (Newpost), Landi, Dspread, Telpo y Urovo.</p>
-          </div>
-          <div class="brand-selector" aria-label="Equipos y marcas proveidas">
-            <div id="brandSelectorTrack" class="brand-selector__track" aria-label="Marcas de equipos"></div>
+            <p class="m-0">Marcas disponibles: Verifone, Sunmi, NewPOS (Newpost), Landi, Dspread, Telpo y Urovo.</p>
           </div>
 
-          <div class="section__header">
-            <p class="tag">Catálogo dinámico</p>
-            <h2>Terminales POS Verifone</h2>
-            <p id="productsCounter" class="section__sub"></p>
+          <div class="site-brand-track brand-selector" aria-label="Equipos y marcas proveídas">
+            <div id="brandSelectorTrack" class="site-brand-track" aria-label="Marcas de equipos"></div>
           </div>
+
+          <div>
+            <div class="bg-title second mb-3">
+              <img src="assets/img/Vector 6.png" class="img-fluid" alt="" />
+              <h6 class="m-0">Catálogo dinámico</h6>
+            </div>
+            <h2>Terminales POS Verifone</h2>
+            <p id="productsCounter" class="m-0"></p>
+          </div>
+
           <div id="productsGrid" class="products-grid" aria-live="polite"></div>
         </div>
       </section>
 
-      <section class="section section--compact">
-        <div class="container">
-          <div class="section__header">
-            <p class="tag">Comparador rápido</p>
-            <h2>Referencia para evaluación inicial</h2>
+      <section class="section">
+        <div class="r-container">
+          <div class="bg-title second mb-3">
+            <img src="assets/img/Vector 11.png" class="img-fluid" alt="" />
+            <h6 class="m-0">Comparador rápido</h6>
           </div>
-          <div class="table-wrap" role="region" aria-label="Comparador de productos">
-            <table class="compare-table">
+          <h2>Referencia para evaluación inicial</h2>
+          <div class="site-table-wrap mt-3" role="region" aria-label="Comparador de productos">
+            <table class="site-table">
               <thead>
                 <tr>
                   <th>Categoría</th>
@@ -139,7 +134,12 @@
             <h3 id="dialogTitle"></h3>
             <p id="dialogDescription"></p>
             <div id="dialogSpecs" class="specs-grid"></div>
-            <a href="contact.html" class="btn btn--primary">Solicitar cotización</a>
+            <a href="contact.html" class="btn btn-accent">
+              <span>Solicitar cotización</span>
+              <div class="icon-box">
+                <i aria-hidden="true" class="rtmicon rtmicon-arrow-right"></i>
+              </div>
+            </a>
           </div>
         </article>
       </dialog>
@@ -150,16 +150,21 @@
           <div class="product-card__content">
             <h3 class="product-card__title"></h3>
             <p class="product-card__description"></p>
-            <button class="btn btn--secondary">Ver detalles y cotizar</button>
+            <button class="btn btn-accent" type="button">
+              <span>Ver detalles y cotizar</span>
+              <div class="icon-box">
+                <i aria-hidden="true" class="rtmicon rtmicon-arrow-right"></i>
+              </div>
+            </button>
           </div>
         </article>
       </template>
     </main>
 
     <site-footer></site-footer>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js" defer></script>
     <script src="components/header.js" defer></script>
     <script src="components/footer.js" defer></script>
     <script src="scripts/products.js" defer></script>
   </body>
 </html>
-

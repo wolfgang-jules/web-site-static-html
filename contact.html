@@ -1,11 +1,15 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/img/favicon.png" />
+    <title>Contacto | POSTEK-USA</title>
+    <meta
+      name="description"
+      content="Canales de contacto para asesoría comercial y técnica de soluciones POS y softPOS."
+    />
+    <link rel="stylesheet" href="styles/style.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -19,47 +23,92 @@
   <body>
     <site-header></site-header>
 
-    <main>
-      <section class="section section--contact" id="contact">
-        <div class="container contact-grid">
-          <div>
-            <h1>Hable con un especialista en soluciones POS y softPOS</h1>
-            <p class="section__sub">
-              Compártenos tu necesidad: industria, volumen, canales de cobro e integraciones requeridas.
-              Nuestro equipo técnico y comercial te responderá con una ruta de implementación.
-            </p>
-            <p class="section__sub">
-              Trabajamos con bancos, instituciones financieras y comercios que necesitan aceptar pagos con tarjeta y pagos sin contacto.
-            </p>
-
-            <article class="contact-info-card" aria-label="Datos de contacto">
-              <h3>Canales de atención</h3>
+    <main id="main-content">
+      <section class="section" id="contact">
+        <div class="r-container">
+          <div class="row row-cols-xl-2 row-cols-1 g-4 align-items-start">
+            <div class="col">
+              <div class="bg-title second mb-3">
+                <img src="assets/img/Vector 13.png" class="img-fluid" alt="" />
+                <h6 class="m-0">Contacto</h6>
+              </div>
+              <h1 class="site-main-title">Hable con un especialista en soluciones POS y softPOS</h1>
               <p>
-                <strong>Dirección:</strong> 14500 SW 32 ST, Miami, FL 33175<br />
-                <strong>Email:</strong> <a href="mailto:sales@postek-usa.com">sales@postek-usa.com</a><br />
+                Compártenos tu necesidad: industria, volumen, canales de cobro e integraciones requeridas.
+                Nuestro equipo técnico y comercial te responderá con una ruta de implementación.
               </p>
-            </article>
-            <br />
-            <a class="btn btn--primary" href="mailto:sales@postek-usa.com?subject=Solicitud%20de%20asesoria%20Postek">Contáctanos por email</a>
-          </div>
-          <div class="contact-stack">
-            <div class="map-card" aria-label="Mapa de ubicación de oficina">
-              <iframe
-                title="Mapa oficina Postek Miami"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-80.5000%2C25.7050%2C-80.3000%2C25.8050&layer=mapnik&marker=25.7406%2C-80.4422"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-              <p>14500 SW 32 ST, Miami, FL 33175</p>
+              <p>
+                Trabajamos con bancos, instituciones financieras y comercios que necesitan aceptar pagos con tarjeta y
+                pagos sin contacto.
+              </p>
+
+              <article class="site-hero-panel mt-3" aria-label="Datos de contacto">
+                <h3>Canales de atención</h3>
+                <p class="m-0">
+                  <strong>Dirección:</strong> 14500 SW 32 ST, Miami, FL 33175
+                </p>
+                <p class="m-0">
+                  <strong>Email:</strong> <a href="mailto:sales@postek-usa.com">sales@postek-usa.com</a>
+                </p>
+                <a href="mailto:sales@postek-usa.com?subject=Solicitud%20de%20asesoria%20Postek" class="btn btn-accent mt-3">
+                  <span>Contactarnos por email</span>
+                  <div class="icon-box">
+                    <i aria-hidden="true" class="rtmicon rtmicon-arrow-right"></i>
+                  </div>
+                </a>
+              </article>
             </div>
+
+            <div class="col">
+              <div class="site-hero-panel">
+                <h2 class="mb-3">Envíanos tu solicitud</h2>
+                <form class="site-form d-flex flex-column gap-3" action="mailto:sales@postek-usa.com" method="post" enctype="text/plain">
+                  <div>
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" class="form-control" autocomplete="name" required />
+                  </div>
+                  <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" class="form-control" autocomplete="email" required />
+                  </div>
+                  <div>
+                    <label for="company">Empresa</label>
+                    <input id="company" name="company" type="text" class="form-control" autocomplete="organization" />
+                  </div>
+                  <div>
+                    <label for="message">Necesidad</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                  </div>
+                  <button class="btn btn-accent w-max-content" type="submit">
+                    <span>Enviar solicitud</span>
+                    <div class="icon-box">
+                      <i aria-hidden="true" class="rtmicon rtmicon-arrow-right"></i>
+                    </div>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pt-0">
+        <div class="r-container">
+          <div class="site-contact-map" aria-label="Mapa de ubicación de oficina">
+            <iframe
+              title="Mapa oficina Postek Miami"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-80.5000%2C25.7050%2C-80.3000%2C25.8050&layer=mapnik&marker=25.7406%2C-80.4422"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
     </main>
 
     <site-footer></site-footer>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js" defer></script>
     <script src="components/header.js" defer></script>
     <script src="components/footer.js" defer></script>
   </body>
 </html>
-
