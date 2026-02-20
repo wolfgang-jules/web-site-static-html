@@ -3,9 +3,9 @@ class SiteHeader extends HTMLElement {
     const currentPage = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
     const navItems = [
       { href: "index.html", label: "Inicio" },
+      { href: "company.html", label: "Empresa" },
       { href: "products.html", label: "Productos" },
       { href: "services.html", label: "Servicios" },
-      { href: "about.html", label: "Empresa" },
       { href: "contact.html", label: "Contacto" },
     ];
 
